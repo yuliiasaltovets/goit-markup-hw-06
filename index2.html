@@ -1,0 +1,128 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles2.css">
+</head>
+<body>
+    <form class="form js-speaker-form" autocomplete="off">
+        <div class="form-field">
+                <input class="form-input" type="text" name="name" id="name" placeholder=" " />
+                <label for="name" class="form-label">Имя</label>
+                <span class="icon"></span>
+           </div>
+        <div class="form-field">
+            <input class="form-input" type="tel" name="tel" id="tel" placeholder=" " />
+            <label for="tel" class="form-label">Телефон</label>
+            <span class="icon"></span>
+        </div>
+        </form>
+        <!-- <div role="group">
+            <h2 class="group-title">Тема доклада</h2>
+            <ul class="topic-options">
+               <li>
+                    <input type="checkbox" name="topik" value="html" id="html" />
+                    <label for="html">HTML</label>
+                </li>
+                
+                <li>
+                    <input type="checkbox" name="topik" value="css" id="css" />
+                    <label for="css">CSS</label>
+                </li>
+                
+                <li>
+                    <input type="checkbox" name="topik" value="js" id="js" />
+                    <label for="js">JavaScript</label>
+                </li>
+            </ul>
+           
+        </div>
+
+        <div role="group" class="group">
+            <h2 class="group-title">Уровень вашей экспертности</h2>
+            <ul class="experince-options">
+                <li>
+                    <input type="radio" name="experience" value="junior" id="junior" checked />
+                <label for="junior">Junior</label>
+            </li>
+                <li>
+                    <input type="radio" name="experience" value="middle" id="middle" />
+                <label for="middle">Middle</label>
+            </li>
+                <li>
+                    <input type="radio" name="experience" value="senior" id="senior" />
+                <label for="senior">Junior</label>
+            </li>
+            </ul>   
+        </div>
+        <div class="form-field">
+            <label for="date">Дата доклада</label>
+            <input type="datetime-local" name="date" id="date" class="date" />
+        </div>
+        
+        <div class="form-field">
+            <label for="pdf">Загрузите файл в формате pdf</label>
+            <input type="file" name="pdf" id="pdf" />
+        </div>
+       
+        <div class="form-field">
+            <label for="comment">Оставить комментарий</label>
+            <textarea
+            class="comment"
+            name="comment" 
+            id="comment" 
+            rows="8px">
+            </textarea>
+        </div>
+
+        <div class="form-field">
+            <input type="checkbox" name="policy" id="policy">
+            <label for="policy">Соглашаюсь</label>
+        </div>
+       
+    <button type="submit">Оставить заявку</button> -->
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        ( () => {
+            document
+            .querySelector('.js-speaker-form')
+            .addEventListener('submit', e => {
+                e.preventDefault();
+
+                new FormData(e.currentTarget).forEach((value,name) => 
+                    console.log('${name}: ${value}' ),   
+                );
+            });
+        })();
+
+    </script>
+</body>
+</html>

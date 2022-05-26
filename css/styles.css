@@ -270,9 +270,7 @@ html {
     padding-bottom: 30px;
     padding-left: 16px;
 }
-.checkbox-icon {
 
-}
 .text-checkbox {
     font-family: 'Roboto';
     font-size: 14px;
@@ -394,17 +392,13 @@ textarea {
     background-color: var(--background-clr)
 }
 
-.hdr {
-    padding-top: 24px;
-    padding-bottom: 24px;
-}
-
 .list {
     margin-top: 0px;
     margin-bottom: 0px;
     padding: 0px;
     display: flex;
     list-style: none;
+
 }
 
 .item-asset {
@@ -541,6 +535,10 @@ textarea {
     position: relative;
     border-radius: 2px;
 }
+.link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
 .studio {
     color: #2196F3;
     display: block;
@@ -563,7 +561,6 @@ textarea {
     background-color: #2196f3;
     border-radius: 2px;
     height: 4px;
-    outline: 1px solid red;
 }
 
 .link-contact {

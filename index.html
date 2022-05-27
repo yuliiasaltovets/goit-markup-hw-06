@@ -27,9 +27,9 @@
                     <li class="item">
                         <a class="item-link studio" href="./index.html">Студия</a></li>
                     <li class="item">
-                        <a class="link element" href="./portfolio.html">Портфолио</a></li>
+                        <a class="link element nav-position" href="./portfolio.html">Портфолио</a></li>
                     <li class="item">
-                        <a class="link element" href="">Контакты</a></li>
+                        <a class="link element nav-position" href="">Контакты</a></li>
                 </ul>
             </nav>
             <ul class="list-contact main-cntct">
@@ -67,8 +67,8 @@
                             </svg>
                         </a>
                         <h3 class="item-title">Внимание к деталям</h3>
-                        <p class="item-text">Идейные соображения, а также начало повседневной работы по формированию
-                            позиции.</p>
+                        <b class="item-text">Идейные соображения, а также начало повседневной работы по формированию
+                            позиции.</b>
                     </li>
                     <li class="item-asset">
                         <a class="asset-link">
@@ -143,11 +143,18 @@
                         <label for="comment" class="modal-label-comment">Комментарий</label>
                             <textarea class="modal-comment" name="comment" id="comment" cols="30" rows="10" placeholder="Введите текст"></textarea>
                         </div>
+
                         <div class="checkbox-div">
-                            <label class="text-checkbox" for="checkbox"> 
-                             <input type="checkbox" class="form-checkbox" name="checkbox" id="checkbox" /> 
-                             <span class="checkbox-icon"></span>
-                             Соглашаюсь с рассылкой и принимаю Условия договара
+                            <label class="text-checkbox form-policy-group" for="checkbox"> 
+                             <input class="checkbox" type="checkbox" name="checkbox" id="checkbox" /> 
+                             <span class="custom-checkbox">
+                             <svg class="custom-checkbox-icon" width="16" height="15" >
+                                 <use href="./images/icons.svg#icon-Vector-3" ></use>
+                             </svg>
+                            </span>
+                             Соглашаюсь с рассылкой и принимаю 
+                             <a href="./index.html" class="polit-conf" >
+                                 Условия договара</a>
                         </label>
                         </div>
                         
